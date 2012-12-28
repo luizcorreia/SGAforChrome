@@ -1,0 +1,113 @@
+/* MENU Horizontal*/
+#nav {
+	list-style:none;
+	width:100% !important;
+	height:25px !important;
+	margin-right:50px !important;
+	margin-left:10px !important;
+	min-width:578px !important;
+
+	/* Rounded Corners */
+	
+	border-radius: 2px;
+
+	/* Background color and gradients */
+	
+	background: #014464;
+	background: -webkit-linear-gradient(top, #5a88aa 0%,#2d73ab 100%);
+	
+	/* Borders */
+	
+	border: 1px solid #002232;
+
+	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+	box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+#top_nav  {
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 0px 0px 4px 0px !important;
+	margin-top:0px !important;
+	border:none;
+	z-index:8000 !important;
+}
+#top_nav ul{
+
+
+	float:left !important;
+	border-radius:0px 2px 2px 2px;
+	padding-top:0px !important;
+	height:auto;
+	box-shadow: 0px 0px 2px #000 !important; 
+	z-index:1 !important;
+}
+#top_nav li:hover a{
+	z-index:9999 !important;
+	 color:#5C6166 ;
+	background-color: rgba(249, 249, 249, 0.9) !important;
+	
+}
+#top_nav li{
+	background:transparent !important;
+	
+}
+#top_nav ul li a:hover   {
+	/*text-shadow: 0px 0px 1px #000000 !important;*/
+	background-color: rgba(153, 188, 207, 0.9) !important;
+	color:#000000 !important;
+	border-radius:2px 2px 2px 2px;
+	border:0px;
+}
+
+#top_nav a{
+	background:transparent !important;
+	line-height:26px !important;
+}
+
+
+
+
+#topnav_1{
+	background:#eeeeee !important;
+	width: 150px !important;
+	border-right:1px solid !important;
+	line-height:15px !important;
+	z-index:9999 !important;;
+}
+#topnav_2{
+	width: 100px !important;
+	border-right:1px solid !important;
+	margin-left:0px;
+	z-index:8000;
+}
+#topnav_3{
+	width: 110px !important;
+	border-right:1px solid !important;
+	margin-left:0px;
+}
+#topnav_4{
+	width: 130px !important;
+	border-right:1px solid !important;
+	margin-left:0px;
+}
+#topnav_5{
+	width: 135px !important;
+	border-right:1px solid !important;
+	margin-right:0px;
+}
+
+
+
+.class1 table tbody tr td p table tbody tr:hover td{
+	background:#99BCCF !important;
+}
+.class1 table tbody tr td p table tbody tr td{
+	line-height:19px;
+}
+
+td{
+vertical-align:top;
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MENU SGA</title>
+		<link rel="stylesheet" href="menu.css">
+		<link rel="stylesheet" href="teste.css">
+		<script src="../jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="menu.js" charset="utf-8"></script>
+		
+		<script>
+		
+		</script>
+	</head>
+	
+	<body onload="menu_main();">
+		<div id="principal" class="principal">
+			<div id="menu">
+				
+									
+				<div class="menu-item primeiro">
+					<h4 class="gradient pucminas_header">
+					<img class="logo" src="../../icons/logo100x100.png" width="40px" height="40px" /><a a href="#">PUC Minas</a>
+					<div id="nome"></div>
+					</h4>
+					
+					<ul class="lista pucminas_body">
+						<li><img class="icons" src="../../icons/calendar.png" width="24px"/><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_Calendario.html">Calendário</a></li>
+						<li><img class="icons" src="../../icons/horario.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_GradedeHorarios.html">Grade de Horários</a></li>
+						<li><img class="icons" src="../../icons/notas.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_NotaFrequencia2.html">Notas e Frequências</a></li>
+						<li><img class="icons" src="../../icons/message.png" width="24px" /><a id="mens" target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCO_Mensagem.html?tipos=3" data-notifications="10">Mensagens</a></li>
+						<li><img class="icons" src="../../icons/config.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_Preferencias.html">Configurações</a></li>
+						<li><img class="icons" src="../../icons/contrato.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_Contratos.html">Contratos</a></li>
+						<li><img class="icons" src="../../icons/universia.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_WebMail.html">Universia</a></li>
+						<li><img class="icons" src="../../icons/mail.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCP_TrocarSenhaWebmail.html">PUC Mail</a></li>
+						<li><img class="icons" src="../../icons/files.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_ArquivosPostados.html">Arquivos Semestres Anteriores</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="menu-item">
+					<h4 class="gradient"><a href="#">Disciplinas</a></h4>
+					<div id="materias" class="lista collapse" style="display: block">Carregando</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	<div id="preload" style="display: none" ></div>
+	<div id="nome_preload" style="display: none" ></div>
+	<a id="displayText" style="display: none"></a>
+	</body>
+
+</html>
+
+

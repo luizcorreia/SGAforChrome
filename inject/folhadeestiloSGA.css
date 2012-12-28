@@ -1,0 +1,598 @@
+﻿*{
+
+}
+
+.main{
+width:100%;
+border-collapse:collapse;
+}
+
+.main tr td.contorno{
+border-collapse:collapse;
+border:1px solid #CCCCCC;
+vertical-align:left;
+}
+.main tr td.celnav1{
+border-collapse:collapse;
+border:none;
+vertical-align:top;
+padding:0;
+}
+.main tr td.celnav2{
+border-collapse:collapse;
+border:none;
+vertical-align:top;
+padding:10px 0px 0px 10px;
+}
+
+body{
+background:white !important;
+margin:0px !important;
+padding:0px 100px 0px 90px !important;
+border-spacing:0px !important;
+}
+
+.abas{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	color: #000000;
+	width:100%;
+	height:100%;
+	
+}
+.menu {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+    padding: 0;
+	cursor: hand;
+	width:25%;
+    height:25px;
+	text-align:center;
+	
+}
+
+.menu div{
+width:100%;
+padding:0px 0px 0px 0px;
+}
+p{
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+}
+
+.menu div div{
+width:100%;
+text-align:center;
+padding:5px 5px 5px 5px;
+background-color:#FFffff;
+border-top:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+border-bottom:1px solid  #2D73AB;
+font-size:95%;
+}
+
+.menu_celula {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	padding: 0;
+	cursor: hand;
+    width:40%;
+    height:25px;
+	text-align:center;
+}
+
+.menu_celula div{
+width:100%;
+padding:10px 0px 0px 0px;
+}
+
+.menu_celula div div{
+width:100%;
+text-align:center;
+padding:5px;
+background-color:#ffffff;
+border-top:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+border-bottom:1px solid #2D73AB;
+font-size:95%;
+}
+
+menu-sel_diario {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #0000FF;
+	background-position:100% 100%;
+    background-attachment:fixed;
+	padding: 0;
+	cursor: hand;
+	width:60%;
+    height:25px;
+                                                  
+}
+
+menu-sel_diario div{
+width:100%;
+padding:10px 0px 0px 0px;
+filter:shadow(color:#CCCCCC,direction:0,strength:5);
+}
+
+menu-sel_diario div div { width: 100%; text-align: center; background-color: left; background-image: 
+               url('http://desenvolvimento.pucminas.br/sga3/SilverStream/Objectstore/Images/backgroundmenu_abas1.jpg'); 
+               background-repeat: repeat-x; background-attachment: fixed; 
+               font-size: 95%; border-left: 1px solid #2D73AB; 
+               border-right: 1px solid #2D73AB; border-top: 1px solid #2D73AB; 
+               border-bottom: 1px solid #E2E2E2; padding: 5px; 
+               background-position: top }
+
+.menu-sel_apoio {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #0000FF;
+	/*background-color: #FFFFFF;
+       	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+        background-repeat:no-repeat;*/
+        background-position:100% 100%;
+        background-attachment:fixed;
+	padding: 0;
+	cursor: hand;
+	width:40%;
+        height:25px;
+                                                  
+}
+
+.menu-sel_apoio div{
+width:100%;
+padding:10px 0px 0px 0px;
+filter:shadow(color:#CCCCCC,direction:0,strength:5);
+}
+
+.menu-sel_apoio div div { width: 100%; text-align: center; background-color: left; background-image: 
+               url('http://desenvolvimento.pucminas.br/sga3/SilverStream/Objectstore/Images/backgroundmenu_abas1.jpg'); 
+               background-repeat: repeat-x; background-attachment: fixed; 
+               font-size: 95%; border-left: 1px solid #2D73AB; 
+               border-right: 1px solid #2D73AB; border-top: 1px solid #2D73AB; 
+               border-bottom: 1px solid #E2E2E2; padding: 5px; 
+               background-position: top }
+.menu-sel_comunicacao {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #0000FF;
+        /*background-position:100% 100%;
+        background-attachment:fixed;
+	background-color: #FFEFDF;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;*/
+	padding: 0;
+	cursor: hand;
+	width:25%;
+        height:25px;
+        text-align:center;
+        
+	
+}
+.menu-sel_comunicacao div{
+width:100%;
+padding:10px 0px 0px 0px;
+filter:shadow(color:#CCCCCC,direction:0,strength:5);
+}
+
+.menu-sel_comunicacao div div { width: 100%; text-align: center; background-color: left; background-image: 
+               url('http://desenvolvimento.pucminas.br/sga3/SilverStream/Objectstore/Images/backgroundmenu_abas1.jpg'); 
+               background-repeat: repeat-x; background-attachment: fixed; 
+               font-size: 95%; border-left: 1px solid #2D73AB; 
+               border-right: 1px solid #2D73AB; border-top: 1px solid #2D73AB; 
+               border-bottom: 1px solid #E2E2E2; padding: 5px; 
+               background-position: top }
+.celuladiferente{
+   border-right:none;
+   border-top:none;
+   border-left:none;
+   border-bottom:1px solid  #2D73AB;
+   width:35%;
+   }
+
+
+.tb_conteudo{
+border-left:1px solid  #2D73AB;
+border-bottom: 1px solid  #2D73AB;
+border-right: 1px solid  #2D73AB;
+}
+
+.conteudo    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 85%; 
+               font-weight: normal; color: #000033; background-color: left; 
+               background-image: 
+               url('http://desenvolvimento.pucminas.br/sga3/SilverStream/Objectstore/Images/backgroundmenu_abas.jpg'); 
+               background-repeat: repeat-x; background-attachment: fixed; 
+               width: 100%; height: 100%; padding: 5px; background-position: 
+               top }
+.tabela_conteudo1{
+border: none;
+border-collapse:collapse;
+font-size:100%;
+font-family: Verdana, Arial, Helvetica,sans-serif;
+color:#000000;
+width:100%
+}
+.tabela_conteudo2{
+border: none;
+border-collapse:collapse;
+font-size:100%;
+font-family: Verdana, Arial, Helvetica,sans-serif;
+color:#000000;
+width:100%
+}
+.tabela_conteudo3{
+border: none;
+border-collapse:collapse;
+font-size:100%;
+font-family: Verdana, Arial, Helvetica,sans-serif;
+color:#000000;
+width:60%
+}
+.tabela_conteudo1 tr td{
+border-right:1px solid  #2D73AB;
+width:20%;
+text-align:center;
+}
+.tabela_conteudo2 tr td{
+border-right:1px solid  #2D73AB;
+width:20%;
+text-align:center;
+}
+.tabela_conteudo3 tr td{
+border-right:1px solid  #2D73AB;
+width:20%;
+text-align:center;
+}
+
+a.com_efeito{
+color:#000000;
+text-decoration:none;
+font-size:100%;
+} 
+a.com_efeito:hover{
+color:#0000FF;
+}
+
+font.sga{
+font-size:15pt;
+font-weight:bold;
+text-align:center;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+color:black;
+}
+
+font.logoPUC{
+font-size:15pt;
+font-weight:bold;
+text-align:center;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+color:#304376;
+}
+
+
+.menulateral1 tr td{
+padding:0px 0px 0px 0px;
+margin:0;
+}
+
+.menulateral1 tr td a:hover{
+color:#0033CC;
+margin:0;
+}
+.menulateral1 tr td.itens_menu1 a{
+color:#000000;
+border:none;
+text-decoration:none;
+background-color:#F7F7F7;
+margin:0;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+padding:10px 0px 0px 4px;
+}
+
+
+
+.menulateral1 tr td.apertado a.link{
+text-align:left;
+color:black;
+text-decoration:none;
+font-size:75%;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+padding:10px;
+}
+
+.menulateral1 tr td a font{
+font-size:75%;
+}
+.menulateral1 tr td a img{
+border:none;
+}
+
+ul.disciplina li{
+width:100%;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+
+}
+
+ul.acesso_disciplina li{
+width:100%;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+border:none;
+}
+
+ul.disciplina li a {
+background-color:#F9F9F9;
+color:#000000;
+}
+
+ul.disciplina li a:hover{
+background-color:#7E9AB2;
+color:#FFFFFF;
+}
+
+#id_menulateral ul li{
+background-color:#F9F9F9;
+border-top: 1px solid #CCCCCC;
+}
+
+#id_menulateral ul.acesso_disciplina li{
+background-color:#F9F9F9;
+border-top:none;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+padding: 3px 0px 3px 0px;
+font-size:75%;
+}
+
+td.contorno div.id_menulateral ul.disciplina li{
+padding:7px 0px px 0px;
+}
+
+
+
+td.contorno table.menulateral1 tr.borda td{
+border-bottom:1px solid #CCCCCC;
+}
+
+.itens_menu1{
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+}
+table.menulateral1 tr td.itens_menu1{
+padding:0px 0px 0px 0px;
+}
+
+
+
+.desapertadoUnidade{
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:60%;
+color = #330099; 
+}
+
+.desapertadoCurso{
+border-right:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:60%;
+color = #006666; 
+}
+
+.rdesapertado{
+border-right:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:60%;
+}
+
+.ldesapertado{
+border-left:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:60%;
+}
+.apertado{
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+background-color:#F9F9F9;
+margin:0;
+border-collapse:collapse;
+}
+
+table.menulateral1 tr td.desapertado{
+padding:15px 0px 0px 4px;
+}
+
+table.menulateral1 tr td.apertado{
+padding:15px 0px 0px 4px;
+}
+
+table.menulateral1 tr td.desapertado a{
+color:blue;
+
+}
+
+
+td div.id_menulateral ul.acesso_disciplina li{
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-weight:bold;
+font-size:75%;
+padding:6px 0px 3px 0px;
+border-bottom: 1px solid #CCCCCC;
+}
+
+td div.id_menulateral ul.disciplina li a{
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:75%;
+padding:3px 0px 3px 0px;
+}
+
+tr td.espaco_menu{
+height:15px;
+}
+
+
+#navcima ul { margin: 0; padding: 0px 0px 0px 0px; list-style: none; z-index:10000 }
+#navcima ul li { position: relative; float: left;
+	height:18px; 
+	background-color: #F9F9F9;
+	background-repeat: no-repeat;
+       	padding:0;
+	}
+#navcima ul li a:hover {color:#0000FF;}
+#navcima ul li a {height: 18px; text-decoration: none; color: #000; display: block; line-height: 18px; font-family:Verdana,Arial,Helvetica,sans-serif;font-size:75%;
+text-align:center; vertical-align:middle;
+padding:0px 0px 0px 0px; 
+}
+
+
+#navcima ul li.noticias{width:35%; }
+#navcima ul li.ajuda{width:35%;
+                     text-align:center;
+                     vertical-align:middle;
+                     }
+#navcima ul li.sair{width:25%;}
+
+
+.size{
+width:8px;
+height:8px;
+border:none;
+}
+
+.nome_estudante{
+font-size:75%;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+color:#075189;
+
+}
+.titulo_disciplina{
+font-family:Verdana,Arial,Helvetica,sans-serif;
+color:black;
+font-size:95%;
+}
+
+.linha{
+padding:20px 0px 0px 0px;
+font-family:Verdana,Arial,Helvetica,sans-serif;  
+border-bottom:1px solid #CCCCCC;
+}
+
+.atencao{
+
+color:#000080; 
+font-size:12pt; 
+font-weight:bold;
+font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+.atencao_normal{
+color:#000; 
+font-size:11pt; 
+font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+
+center#news{
+	padding: 0px;
+}
+center#news p{
+	padding: 0px;
+	
+}
+
+
+
+
+
+#grade{ 
+    background-color:#fff;
+    border-radius:0px 0px 5px 5px;
+    color:#000;
+    display:none; 
+    padding:5px;
+	overflow:hidden;
+	width:780px;
+
+}
+#grade iframe{
+	margin-top:-95px;
+	margin-left:-80px;
+	width:950px;
+	height:600px;
+	z-index:9999;
+}
+
+
+blockquote{
+	display:none;
+}
+
+
+
+
+
+p:empty{
+	display:none !important;
+}
+
+*{
+	border-spacing:0 !important;
+	border-collapse:collapse !important;
+	padding:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

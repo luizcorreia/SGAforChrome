@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Login</title>
+		<link rel="stylesheet" href="login_01.css">
+		<script type="text/javascript" src="login.js" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="popup"></div>
+		<div id="principal">
+			<form id="login" action="https://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_LoginSSL.html" target="new" >
+				<fieldset id="inputs">
+					<img class="logo" src="../icons/logo100x100.png" width="100px" height="100px" />
+					<h1>Puc Minas</h1>
+					<input type="hidden" name="AgEvtSrc" value="S65_">
+					<input type="hidden" name="AgStateCode" value="1">
+					<input type="hidden" name="menu_direto" value="">
+
+					
+					<input id="usuario" placeholder="Matrícula" type="text" name="S43_" value="">
+					
+					<input id="senha" placeholder="Senha" type="password" name="S45_" value="">
+					
+					<select id="origem" name="S49_">
+						<option value="0">-= ORIGEM =-</option>
+						<option value="1">CEFAP</option>
+						<option value="2">Doutorado</option>
+						<option value="3">Ensino à Distância</option>
+						<option value="4">Especialização Arcos</option>
+						<option value="5">Especialização Betim</option>
+						<option value="6">Especialização Poços</option>
+						<option value="7">Especialização São Gabriel</option>
+						<option value="8">Faculdade de Odontologia</option>
+						<option value="9">Funcionário</option>
+						<option value="10">Seqüencial</option>
+						<option value="11">Graduação</option>
+						<option value="12">ICBS</option>
+						<option value="13">IEC</option>
+						<option value="14">IEC - Seqüencial</option>
+						<option value="15">Instituto de Informática</option>
+						<option value="16">Mestrado</option>
+						<option value="17">NPJ</option>
+						<option value="18">Oficina Teatro</option>
+						<option value="19">PREPES</option>
+					</select>
+					<input type="hidden" name="S69_" value="">
+					<input type="hidden" name="q" value="">
+					
+					<label><input type="checkbox" id="lembrar"/>Lembrar de min</label>  
+					
+					
+				</fieldset>
+				<fieldset id="actions">				
+					<div id="submit" href="#">
+				    	<a id="entrar">Entrar</a>
+					</div>
+				</fieldset>
+			</form>
+			<iframe src="https://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_LoginSSL.html" height="0" width="0" frameborder="0"></iframe>
+			
+		</div>
+	</body>
+
+</html>
+
+

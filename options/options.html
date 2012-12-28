@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>SGA Opções</title> 
+		<link rel="stylesheet" href="options.css" /> <!-- incluso -->
+		<link rel="stylesheet" href="options_general.css" /> <!-- incluso -->
+		<link rel="stylesheet" href="drag-and-drop.css" /> <!-- incluso -->
+		<link rel="stylesheet" href="options_site.css" /> <!-- incluso -->
+		<script type="text/javascript" src="../jquery-1.8.3.js" charset="utf-8"></script>
+		<script type="text/javascript" src="options.js" charset="utf-8"></script>
+		<script type="text/javascript" src="links.js" charset="utf-8"></script>
+
+
+	</head>
+	<body>
+		
+
+		
+		
+		<div id="general">
+			<div class="content">
+				<div class="titulo">
+					<h3>Opções Gerais</h3>
+				</div>
+				
+				<form>
+					<fieldset>
+						<legend>Menu Login</legend>			
+						
+						<label><input type="radio" name="mselect" id="login_01" />
+						Padrão</label>
+						
+						<label><input type="radio" name="mselect" id="login_02" />
+						Perfect</label>
+						
+						<label><input type="radio" name="mselect" id="login_03"  />
+						Stunning</label>
+					</fieldset>
+					<fieldset>
+						<legend>Intevalo Checagem  </legend>       
+						
+						<label><input type = "radio" name="check_time" id="45000"/>
+						45s</label>
+
+						<label><input type = "radio" name="check_time" id="90000"/>
+						90s</label>
+
+						<label><input type = "radio" name="check_time" id="120000"/>
+						2min</label>
+
+						<label><input type = "radio" name="check_time" id="600000"/>
+						10min</label>     
+					</fieldset>   
+					<fieldset>
+						<legend>Serviços</legend>       
+						
+						<label><input type = "checkbox" id="s-bloqueios"/>
+						Aviso de Bloqueios</label>      
+						
+						<label><input type = "checkbox" id="s-mensagem"/>
+						Aviso de Mensagem</label>
+						
+						<label><input type = "checkbox" id="s-nota"/>
+						Aviso de Nota</label>
+
+						<label><input type = "checkbox" id="s-material"/>
+						Aviso de Material</label>
+						
+						<label><input type = "checkbox" id="s-email"/>
+						Aviso de E-Mail</label>  
+						
+					</fieldset>  
+
+				</form>
+			</div>
+		</div>
+		
+		<div id="menuOptions" class="panel">	
+			<div class="content">
+				<div class="titulo">
+					<h3>Opções Menu</h3>
+				</div>
+				<p>Clique e arraste para organizar o menu.</p>					
+				<div id ="menu-sort">
+					<div class="menu-item">
+						<h4 class="gradient pucminas_header">
+							<img class="logo" src="../../icons/logo100x100.png" width="40px" height="40px" />
+							<a a href="#">PUC Minas</a>
+							<div id="nome"></div>
+						</h4>
+						<ul class="lista pucminas_body">
+							<li class="move" draggable="true"><img class="icons" src="../../icons/calendar.png" width="24px"/><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_Calendario.html">Calendário</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/horario.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_GradedeHorarios.html">Grade de Horários</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/notas.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_NotaFrequencia2.html">Notas e Frequências</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/message.png" width="24px" /><a id="mens" target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCO_Mensagem.html?tipos=3" data-notifications="10">Mensagens</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/config.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_Preferencias.html">Configurações</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/contrato.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_Contratos.html">Contratos</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/universia.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_WebMail.html">Universia</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/mail.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCP_TrocarSenhaWebmail.html">PUC Mail</a></li>
+							<li class="move" draggable="true"><img class="icons" src="../../icons/files.png" width="24px" /><a target="new" href="http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgAln_ArquivosPostados.html">Arquivos Semestres Anteriores</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div id="siteOptions" class="panel">
+			<div class="content">
+				<div class="titulo">
+					<h3>Opções Site</h3>
+				</div>
+				<form>
+					<fieldset>
+						<legend>Serviços</legend>       
+						
+						<label><input type = "checkbox" id="site-icon"/>
+						Ícone no site</label>      
+						
+						<label><input type = "checkbox" id="site-grade"/>
+						Nova grade de horários</label>  
+					</fieldset>  
+				</form>
+			</div>
+		</div>
+		
+		<div id="sobre" class="panel">
+			<div class="content">
+				<div class="titulo">
+					<h3>Sobre</h3>
+				</div>
+				<h3>Notas de versão</h3>
+				</br>
+				<h4>Versão 1.0</h4>
+				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+				<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+				<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+			</div>
+		</div>
+		
+		<div id="lateral">
+			<img class="logo_topo" src="icons/logo100x100.png" width="42px" height="42px" />
+			<h3>SGA Opções</h3>
+
+			<div id="navigation">
+				<a id="btn-general" href="#general">Gerais</a>
+				<a id="btn-menu" href="#menuOptions">Menu</a>
+				<a id="btn-site" href="#siteOptions">Site</a>
+				<br><br>
+				<a id="btn-sobre" href="#sobre">Sobre</a>
+				<br><br>
+			</div>
+		
+		<nav id="botoes">
+			<button id="reloadBG">Reload Background</button>
+			<button id="limpar" >Restaurar Padrões</button>
+		</nav>
+
+
+		</div>
+		
+		<div id="preload" style="display: none" ></div>
+		<div id="nome_preload" style="display: none" ></div>
+		<a id="displayText" style="display: none"></a>
+	
+	
+	
+	</body>
+</html>
