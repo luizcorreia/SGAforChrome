@@ -1,9 +1,9 @@
 ﻿{
-  "name": "SGA",
-  "version": "1.7",
+  "name": "SGA para Chrome",
+  "version": "1.8",
   "manifest_version": 2,
   
-  "description": "SGA Fix conserta vários bugs do SGA da PUC Minas e adiciona um menu integrado ao Chrome.",
+  "description": "Um caminho fácil para acessar o SGA(para alunos) da PUC Minas.",
   
   "options_page": "options/options.html#general",
   
@@ -22,7 +22,7 @@
 	  "run_at": "document_end",
       "matches": ["http://www.sistemas.pucminas.br/*"],
       "css": ["inject/folhadeestiloSGA.css", "inject/menu_site.css", "inject/menu_lateral_01.css"],
-	  "js": ["jquery-1.8.3.js", "jquery.bpopup-0.7.0.min.js", "inject.js" ],
+	  "js": ["jquery-1.8.3.js", "bpopup.js", "inject.js" ],
 	  "all_frames": true
     }],
   "background": {

@@ -2,10 +2,12 @@
 var menuMaterias = "";
 var menuMensagens = 0;
 var email = 0;
-var nomeDefault = "Homer Simpsons";
+var nomeDefault = "Carregando nome... ";
 var nome = "";
 var logado = false;
 var bloqueio = false;
+var material = false;
+var falta = false;
 
 function getResolution(){
 	if(screen.height >= 768){
@@ -28,14 +30,16 @@ function firstTime(){
 		localStorage["usuario"] = 0;
 		localStorage["senha"] = 0;
 		localStorage["origem"] = 0;
+		localStorage["rng"] = 0;
 		localStorage["menu_code"] = "login_01";
+		localStorage["lembrar"] = 0;
 // --- Site Options
 		localStorage["site_icon"] = "true";
 		localStorage["nova_grade"] = "false";
 		localStorage["resolution"] = 0;
 		getResolution();
 		
-		alert("Faça um tour pela versão 1.7. (Clique aqui)")
+		//alert("Faça um tour pela versão 1.7. (Clique aqui)")
 	}
 }
 function Sec(ms){ return (ms*1000); }
@@ -54,41 +58,41 @@ function bgMain(p, mens){
 	
 	clearTimeout(principal);
 	var page = new Array();
-	page[0] = "http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_Noticias.html";
-	page[1] = "http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCP_TrocarSenhaWebmail.html";
+	page[0] = "http://www.sistemas.pucminas.br/sco/SilverStream/Pages/pgNOT_AreaNoticia.html"; //Material, Falta, Bloqueio
+	page[1] = "http://www.sistemas.pucminas.br/sgaaluno3/SilverStream/Pages/pgAln_Noticias.html"; //Mensagens
+	//page[1] = "http://www.sistemas.pucminas.br/sga3/SilverStream/Pages/pgSCP_TrocarSenhaWebmail.html";
 	
 	var x = localStorage.getItem("default_checktime");
     var y = parseInt(x);
 	
-	SessionStart(page[p], tempo, "no");
-	var principal = setInterval( function(){ SessionStart(page[p], tempo, mens); }, y );	
+	Session(page, tempo, "no");
+	//var principal = setInterval( function(){ SessionStart(page[p], tempo, mens); }, y );	
+	var principal = setInterval( function(){ Session(page, tempo, mens); }, y );	
 
 	
 }
 	
 
 	bgMain(0, "no");	
-
-	
-
-	
-	var raphael = "raphael";
 	
 
 
-	
-	
-chrome.extension.onMessage.addListener(
-  function(request, sender, sendResponse) {
+
+
+//Message Action/response
+chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.start == "yes"){
-	   setTimeout(function(){ bgMain(0, "no"); } , 1100);
+	   //setTimeout(function(){ bgMain(0, "no"); } , 1100);
+   	}
+   	if (request.reload == "yes"){
+		localStorage["first"] = "true";
+	   	firstTime();
    	}
 });
 
 	
-	
-chrome.extension.onRequest.addListener(function(request, sender, sendResponse) 
-{
+//Data Request
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
     if (request.localstorage == "nova_grade"){
         sendResponse(localStorage["nova_grade"]);
     }else if(request.localstorage == "site_icon"){

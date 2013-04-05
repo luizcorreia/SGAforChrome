@@ -1,4 +1,6 @@
-﻿// Intervalo Checagem
+﻿var bgPage = chrome.extension.getBackgroundPage();
+
+// Intervalo Checagem
 function setCheckTime(time){
 	$("#"+time).attr('checked','checked');	
 }
@@ -52,21 +54,45 @@ $('[name="mselect"]').bind('change', function(){
 });
 
 
+
+
 //Botoes
-	$('#limpar').bind({
+	$('#padroes').bind({
   		click: function() {
-			localStorage["menu"] = "";
+			//alert("Padroes");
+			//Mensagem para BG.
+		chrome.extension.sendMessage({reload: "yes"}, function(response) {
+			console.log(response.farewell);
+		});	
+		btnMessage(this, '✔ Ok');
 		}
 	});
 
-	$('#reloadBG').bind({
+	$('#aplicar').bind({
   		click: function() {  
-			bgPage.bgMain(0, "yes");
-			
-			settimeout(checkOptions(), 300);
+			//bgPage.bgMain(0, "yes");
+			//settimeout(checkOptions(), 300);
+			btnMessage(this, '✔ Ok');
   		}	
 	});
 
+}
+
+function btnMessage(btn, msg){
+	var text = $(btn).text();
+	
+	$(btn).text(msg);
+	
+	setTimeout(function(){
+		geralCheck();
+		siteCheck();
+	}, 10);
+	
+	setTimeout(function(){
+		$(btn).text(text);
+		geralCheck();
+	}, 1900);
+	
 }
 
 function siteCheck(){
@@ -120,6 +146,7 @@ if(localStorage["mensagens"] == "true"){
 	$('#s-email').closest('label').attr('class','disable');	
 
 
+setCheckTime(localStorage["default_checktime"]);
 
 
 }
@@ -130,6 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
   	geralCheck();
 	siteCheck();
 	//alert("Working");
-	setCheckTime(localStorage["default_checktime"]);
+	
 
 });

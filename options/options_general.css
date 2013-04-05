@@ -52,15 +52,15 @@
 	opacity:0.4;
 }
 #general input[type=radio]:checked::before{
-background-color: #666;
-border-radius: 100%;
-bottom: 3px;
-content: '';
-display: block;
-left: 3px;
-position: absolute;
-right: 3px;
-top: 3px;
+	background-color: #666;
+	border-radius: 100%;
+	bottom: 3px;
+	content: '';
+	display: block;
+	left: 3px;
+	position: absolute;
+	right: 3px;
+	top: 3px;
 }
 
 #general input[type=checkbox]{
@@ -71,3 +71,6 @@ top: 3px;
 	background-image: url("icons/checked.png");
 }
 
+#botoes{
+	margin-bottom:11px;
+}
